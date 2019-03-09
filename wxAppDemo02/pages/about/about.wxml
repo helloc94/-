@@ -1,0 +1,16 @@
+<!--logs.wxml-->
+<view class="container">
+  <image class="userinfo-avatar" src="/image/icon001.png" background-size="cover"></image>
+  <text class="log-item">华嫂家政 0.1</text>
+
+  <block>
+	<text class="log-item">电话：{{companyInfo.phone}}</text>
+	<text class="log-item">邮箱：{{companyInfo.email}}</text>
+	<text class="log-item">地址：{{companyInfo.address}}</text>
+  </block>
+
+</view>
+
+<view class="usermotto">
+  <text>华嫂家政(深圳)有限公司 版权所有</text>
+</view>

@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
+    motto: '欢迎使用华嫂家政',
     userInfo: {},
     location:{},
     hasUserInfo: false,
@@ -19,7 +19,7 @@ Page({
   onShareAppMessage: function () {
     return {
       title: '参与抽大奖',
-      path: '/'
+      path: 'pages/index/index'
     }
   },
   onLoad: function () {
@@ -34,18 +34,6 @@ Page({
 		    })
 		  }
 		})
-		// wx.getSystemInfo({
-		//   success(res) {
-		//   	console.log(res)
-		//     console.log(res.model)
-		//     console.log(res.pixelRatio)
-		//     console.log(res.windowWidth)
-		//     console.log(res.windowHeight)
-		//     console.log(res.language)
-		//     console.log(res.version)
-		//     console.log(res.platform)
-		//   }
-		// })
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
